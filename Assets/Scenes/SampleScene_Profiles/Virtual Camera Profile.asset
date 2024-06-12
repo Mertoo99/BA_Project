@@ -45,6 +45,7 @@ MonoBehaviour:
   - {fileID: 8529372709005927419}
   - {fileID: 1251238112125034757}
   - {fileID: -2092738483973418088}
+  - {fileID: 3255530080449059164}
 --- !u!114 &1251238112125034757
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -91,6 +92,31 @@ MonoBehaviour:
   bladeRotation:
     m_OverrideState: 1
     m_Value: -46
+--- !u!114 &3255530080449059164
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29fa0085f50d5e54f8144f766051a691, type: 3}
+  m_Name: FilmGrain
+  m_EditorClassIdentifier: 
+  active: 1
+  type:
+    m_OverrideState: 1
+    m_Value: 9
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  response:
+    m_OverrideState: 1
+    m_Value: 1
+  texture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
 --- !u!114 &3801466178198921437
 MonoBehaviour:
   m_ObjectHideFlags: 3

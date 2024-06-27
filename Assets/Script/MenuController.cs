@@ -5,14 +5,19 @@ public class MenuController : MonoBehaviour
 {
     public void LoadGame()
     {
-        Debug.Log("Versuche, 'Game' zu laden...");
         SceneManager.LoadScene("Game");
+    }
+
+    public void LoadIntro()
+    {
+        Debug.Log("Lade Intro-Video-Szene.");
+        SceneManager.LoadScene("IntroScene");
     }
 
     public void QuitGame()
     {
-        Debug.Log("Spiel wird beendet...");
         Application.Quit();
     }
 }
+
 

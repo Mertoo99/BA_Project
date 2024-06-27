@@ -4,11 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class IntroVideoController : MonoBehaviour
 {
-    public VideoPlayer videoPlayer;
+    public VideoPlayer videoPlayer;  // Stelle sicher, dass der VideoPlayer im Inspector zugewiesen ist.
 
     void Start()
     {
-        videoPlayer.loopPointReached += EndReached;  // Event, das aufgerufen wird, wenn das Video endet
+        if (videoPlayer != null)
+        {
+            videoPlayer.loopPointReached += OnVideoFinished;  // Event, das aufgerufen wird, wenn das Video endet
+        }
     }
 
     void Update()
@@ -19,7 +22,7 @@ public class IntroVideoController : MonoBehaviour
         }
     }
 
-    void EndReached(VideoPlayer vp)
+    void OnVideoFinished(VideoPlayer vp)
     {
         LoadGame();  // Spiel laden, wenn das Video endet
     }
@@ -29,4 +32,5 @@ public class IntroVideoController : MonoBehaviour
         SceneManager.LoadScene("Game");  // Name der Spielszene
     }
 }
+
 

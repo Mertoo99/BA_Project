@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExitCutscene.unity
     guid: 425a4104bdf8fe7418db191deb2cfc31
+  - enabled: 1
+    path: Assets/Scenes/ThanksScene.unity
+    guid: a7d5acc40c20386458fb13d57c3f665d
   m_configObjects: {}

@@ -32,7 +32,7 @@ public class IntroVideoController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))  // Überprüfen, ob die Escape-Taste gedrückt wurde
         {
-            LoadGame();  // Spiel laden
+            LoadLogbookScene();  // Wechsel zur LogbookScene
         }
     }
 
@@ -45,11 +45,12 @@ public class IntroVideoController : MonoBehaviour
 
     void OnVideoFinished(VideoPlayer vp)
     {
-        LoadGame();  // Spiel laden, wenn das Video endet
+        LoadLogbookScene();  // Wechsel zur LogbookScene, wenn das Video endet
     }
 
-    void LoadGame()
+    void LoadLogbookScene()
     {
-        SceneManager.LoadScene("Game");  // Name der Spielszene
+        SceneManager.LoadScene("LogbookScene");  // Name der Logbook Szene
     }
 }
+

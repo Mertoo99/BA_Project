@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.015997944, g: 0.019320246, b: 0.04867581, a: 1}
+  m_IndirectSpecularColor: {r: 0.01602449, g: 0.019336307, b: 0.048614744, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8951,7 +8951,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221986645}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 5ebb4ecdb9bfc6e4aa28617f41ff95ef, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 477fc42e514294d408c1f26e584f1f53, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -8998,8 +8998,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.926571, y: 0.9999998, z: 1}
-  m_Center: {x: 2.9632912, y: 0, z: -0.0000037727355}
+  m_Size: {x: 105.70455, y: 0.9999998, z: 2.9248245}
+  m_Center: {x: 52.352684, y: 0, z: -0.9624022}
 --- !u!23 &1221986648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9059,8 +9059,8 @@ Transform:
   m_GameObject: {fileID: 1221986645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.29804614, z: -0, w: 0.9545515}
-  m_LocalPosition: {x: 60.196, y: 6.0109997, z: 68.585}
-  m_LocalScale: {x: 0.73052365, y: 0.76331544, z: 1.22113}
+  m_LocalPosition: {x: 60.306, y: 6.0109997, z: 68.874}
+  m_LocalScale: {x: 0.059450015, y: 0.76331544, z: 1.22113}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9088,7 +9088,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: e8462d09ee101704893a03813b92fe99,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d490929873909cd43a78cd191ce18c28, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 42f692bdb025c8948bec02b372e02318, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

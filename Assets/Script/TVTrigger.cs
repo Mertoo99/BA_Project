@@ -5,6 +5,7 @@ public class TVTriggerSimple : MonoBehaviour
 {
     private VideoPlayer videoPlayer;
     private AudioSource audioSource;
+    private bool videoEnded = false;  // Zustandsvariable, um zu überprüfen, ob das Video bereits zu Ende gespielt wurde
 
     void Start()
     {
@@ -25,6 +26,9 @@ public class TVTriggerSimple : MonoBehaviour
 
         videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
         videoPlayer.SetTargetAudioSource(0, audioSource);
+        videoPlayer.isLooping = false;  // Stellt sicher, dass das Video nicht im Loop abgespielt wird
+
+        videoPlayer.loopPointReached += OnVideoEnded;
 
         videoPlayer.Pause();
         audioSource.Pause();
@@ -34,13 +38,18 @@ public class TVTriggerSimple : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("OnTriggerEnter aufgerufen mit: " + other.name);
-        if (other.name == "Player" && !videoPlayer.isPlaying)
+        if (other.name == "Player" && !videoPlayer.isPlaying && !videoEnded)
         {
-            Debug.Log("Player hat den Trigger betreten.");
+            Debug.Log("Player hat den Trigger betreten und das Video wird gestartet.");
             videoPlayer.Play();
             audioSource.Play();
         }
     }
 
-    // Entferne die OnTriggerExit Methode, da wir nichts tun wollen, wenn der Spieler den Trigger verlässt.
+    private void OnVideoEnded(VideoPlayer vp)
+    {
+        Debug.Log("Video ist zu Ende.");
+        audioSource.Stop(); // Stoppt die Audioquelle, wenn das Video endet
+        videoEnded = true;  // Setze den Zustand, dass das Video beendet wurde
+    }
 }

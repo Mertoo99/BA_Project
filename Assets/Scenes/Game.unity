@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.015998553, g: 0.019320259, b: 0.04868457, a: 1}
+  m_IndirectSpecularColor: {r: 0.01602344, g: 0.019335594, b: 0.048622247, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6222,8 +6222,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
-  m_Intensity: 0.39
-  m_Range: 10
+  m_Intensity: 0.12
+  m_Range: 54.98512
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -6281,7 +6281,7 @@ Transform:
   m_GameObject: {fileID: 985174778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.98, y: 6.12, z: 68.84}
+  m_LocalPosition: {x: 59.703, y: 6.12, z: 68.826}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8951,7 +8951,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221986645}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 477fc42e514294d408c1f26e584f1f53, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 823050e64ce58394781ca97b26998f59, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -9090,7 +9090,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 42f692bdb025c8948bec02b372e02318, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.109
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9098,10 +9098,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.027885437
-  MaxDistance: 0.049972534
+  MinDistance: 0.005958557
+  MaxDistance: 0.012687683
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -9109,23 +9109,23 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      time: 0.5708632
+      value: 1.008331
+      inSlope: -1.7927822
+      outSlope: -1.7927822
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 1.0002438
+      inSlope: -0.5375668
+      outSlope: -0.5375668
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0.17382056
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4

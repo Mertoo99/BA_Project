@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.01602344, g: 0.019335594, b: 0.048622247, a: 1}
+  m_IndirectSpecularColor: {r: 0.01603302, g: 0.019346967, b: 0.048638795, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4863,6 +4863,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fancy_picture_frame_02_1k (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3709524089413680807, guid: f88c8a6fc47d80e4db954369984a7db1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c740175846e8904cb815cd3a719f7cd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12597,6 +12602,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fancy_picture_frame_02_1k
       objectReference: {fileID: 0}
+    - target: {fileID: 3709524089413680807, guid: f88c8a6fc47d80e4db954369984a7db1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6da05b89abd92bd43b35808dc940f190, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13609,6 +13619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fancy_picture_frame_02_1k (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3709524089413680807, guid: f88c8a6fc47d80e4db954369984a7db1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f670a02647c8b745af05a12cb51e623, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
